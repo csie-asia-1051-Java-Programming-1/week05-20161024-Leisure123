@@ -4,11 +4,27 @@
  * Date: 2016/10/24
  * Author: 1050210XX 周永振老師
  */
-
+import java.util.Random;
 public class ex05 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		Random rnd = new Random();
+		int [][] data = new int[10][10];
+		for(int i = 0 ; i < 10 ; i++){
+			for(int j = 0 ; j < 10 ; j++){
+				data[i][j] = rnd.nextInt(10);
+				System.out.print(data[i][j]+"   ");
+			}
+			System.out.println();
+		}
+		System.out.println("----轉置矩陣----");
+		for(int j = 0 ; j < 10 ; j++){
+			for(int i = 0 ; i < 10 ; i++){
+				System.out.print(data[i][j]+"   ");
+			}
+			System.out.println();
+		}
 
 	}
 
