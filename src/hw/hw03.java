@@ -10,6 +10,15 @@ public class hw03 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scn = new Scanner(System.in);
+		System.out.print("請輸入n值:");
+		long n = scn.nextLong();
+		long sum = 1;
+		long all = 0;
+		for(int i = 1 ; 10000 >= sum ; i++){
+			sum = sum * n;
+			all ++;
+		}
+		System.out.print("要 " + all + " 次方才能大於10000");
 
 	}
 
