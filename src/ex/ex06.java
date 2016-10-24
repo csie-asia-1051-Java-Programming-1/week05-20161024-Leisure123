@@ -10,6 +10,7 @@ public class ex06 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scn = new Scanner(System.in);
+		int v1;
 		System.out.print("共有幾人:");
 		int n = scn.nextInt();
 		int data[ ] = new int [n];
@@ -18,15 +19,17 @@ public class ex06 {
 			data[i] = scn.nextInt();
 		}
 		for(int i = 0 ; i < data.length - 1 ; i++){
-			for(int j = 0 ; j < data.length -i - 1 ; j++){
-				if(data[j + 1]< data[j]){
-					int v1 = data[j + 1];
+			for(int j = 0 ; j < data.length - 1 ; j++){
+				if(data[j] < data[j + 1]){
+					 v1 = data[j + 1];
 					data[j+1]=data[j];
 					data[j]=v1;
 				}
 			}
 		}
-		System.out.print(data[n]);
+		for(int i = 0 ; i < data.length ; i ++){
+			System.out.print(data[i] + " ");
+		}
 
 	}
 
