@@ -19,13 +19,13 @@ public class ex06 {
 			data[i] = scn.nextInt();
 		}
 		for(int i = 0 ; i < data.length - 1 ; i++){
-			for(int j = 0 ; j < data.length - 1 ; j++){
-				if(data[j] < data[j + 1]){
-					 v1 = data[j + 1];
-					data[j+1]=data[j];
-					data[j]=v1;
+			
+				if(data[i] < data[i + 1]){
+					 v1 = data[i + 1];
+					data[i+1]=data[i];
+					data[i]=v1;
 				}
-			}
+			
 		}
 		for(int i = 0 ; i < data.length ; i ++){
 			System.out.print(data[i] + " ");
