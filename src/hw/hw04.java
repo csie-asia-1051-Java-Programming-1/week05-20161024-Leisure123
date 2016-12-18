@@ -18,7 +18,7 @@ public class hw04 {
 			a = a + 1/(((2*i)-1)*(2*i));
 			sum = sum + a;
 		}
-		System.out.print("計算結果為:" + a);
+		System.out.print("計算結果為:" + sum);
 
 	}
 
